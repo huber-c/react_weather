@@ -71,7 +71,7 @@ export default function Weather() {
       </div>
       <p className="footer">
         Open source by{" "}
-        <a href="https://github.com/huber-c/WeatherApp_React" target="_blank">
+        <a href="https://github.com/huber-c/react_weather" target="_blank">
           Carina H.
         </a>
       </p>
