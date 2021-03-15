@@ -18,19 +18,19 @@ export default function Weather() {
   };
 
   return (
-    <div>
+    <div className="Wrapper">
       <div className="Weather">
         <form className="mb-3">
           <div className="row">
             <div className="col-9">
               <input
                 type="search"
-                placeholder="Type a city.."
+                placeholder="Search for a city..."
                 className="form-control"
                 autoComplete="off"
               />
             </div>
-            <div className="col-3">
+            <div className="col-3 search-button">
               <input
                 type="submit"
                 value="Search"
@@ -69,17 +69,17 @@ export default function Weather() {
             </ul>
           </div>
         </div>
+        <p className="footer">
+          Open source by{" "}
+          <a
+            href="https://github.com/huber-c/react_weather"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Carina H.
+          </a>
+        </p>
       </div>
-      <p className="footer">
-        Open source by{" "}
-        <a
-          href="https://github.com/huber-c/react_weather"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Carina H.
-        </a>
-      </p>
     </div>
   );
 }
