@@ -5,7 +5,7 @@ import "./Weather.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-export default function Weather() {
+export default function Weather(props) {
   const [weatherData, setweatherData] = useState({ ready: false });
   function handleResponse(response) {
     console.log(response.data);
@@ -90,8 +90,7 @@ export default function Weather() {
     );
   } else {
     const apiKey = "2ceada01b7fc7d0d21b702ddd8150d97";
-    let city = "Manchester";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Content is loading...";
