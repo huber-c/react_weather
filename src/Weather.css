@@ -44,10 +44,9 @@ li {
   margin-bottom: 20px;
 }
 
-.Weather .weather-temperature img {
-  margin-right: 5px;
-  height: 64px;
-  width: 64px;
+.Weather .weather-temperature canvas {
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 .Weather .weather-temperature strong {
@@ -59,7 +58,7 @@ li {
 
 .Weather .weather-temperature .units {
   position: relative;
-  font-size: 16px;
+  font-size: 17px;
   top: -34px;
 }
 
