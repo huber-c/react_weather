@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import DateFunction from "./DateFunction";
+import "./Weather.css";
 import "./App.css";
 import "./Weather.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -8,12 +10,11 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 export default function Weather(props) {
   const [weatherData, setweatherData] = useState({ ready: false });
   function handleResponse(response) {
-    console.log(response.data);
     setweatherData({
       ready: true,
       city: response.data.name,
       temperature: response.data.main.temp,
-      date: "Sunday 19:30",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       imgUrl: "http://openweathermap.org/img/wn/10d@2x.png",
       humidity: response.data.main.humidity,
@@ -46,7 +47,10 @@ export default function Weather(props) {
           <div className="overview">
             <h1>{weatherData.city}</h1>
             <ul>
-              <li>Last updated: {weatherData.date}</li>
+              <li>
+                Last updated:
+                <DateFunction date={weatherData.date} />
+              </li>
               <li className="text-capitalize">{weatherData.description}</li>
             </ul>
           </div>
