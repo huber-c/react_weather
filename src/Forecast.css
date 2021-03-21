@@ -8,7 +8,7 @@
   display: block;
 }
 
-@media only screen and (max-width: 397px) {
+@media only screen and (max-width: 462px) {
   .Last-Forecast {
     display: none;
   }
