@@ -2,6 +2,8 @@ import React from "react";
 import DateFunction from "./DateFunction";
 import WeatherIcon from "./WeatherIcon";
 import TemperatureUnit from "./TemperatureUnit";
+import "./Weather.css";
+import "boxicons";
 
 export default function WeatherInfo(props) {
   return (
@@ -31,8 +33,14 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-6">
           <ul>
-            <li>Humidity: {props.data.humidity}%</li>
-            <li>Wind: {props.data.wind} km/h</li>
+            <li>
+              <box-icon name="water" color="#fff"></box-icon> Humidity:{" "}
+              {props.data.humidity}%
+            </li>
+            <li>
+              <box-icon name="wind" color="#fff"></box-icon> Wind:{" "}
+              {props.data.wind} km/h
+            </li>
           </ul>
         </div>
       </div>

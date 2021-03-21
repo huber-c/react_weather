@@ -19,6 +19,11 @@ h1 {
   color: #fff;
 }
 
+ul {
+  list-style: none;
+  margin-left: -2.3rem;
+}
+
 li {
   font-size: 18px;
 }
@@ -50,7 +55,7 @@ li {
 }
 
 .Weather .weather-temperature strong {
-  color: #dadde1;
+  color: #fff;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -131,11 +136,6 @@ li {
 .btn-primary:hover {
   background-color: #7052e0 !important;
   border-color: #7052e0 !important;
-}
-
-ul {
-  list-style: none;
-  margin-left: -2.3rem;
 }
 
 textarea:hover,
