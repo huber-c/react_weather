@@ -10,8 +10,7 @@ export default function WeatherInfo(props) {
         <h1>{props.data.city}</h1>
         <ul>
           <li>
-            Last updated:
-            <DateFunction date={props.data.date} />
+            Last updated: <DateFunction date={props.data.date} />
           </li>
           <li className="text-capitalize">{props.data.description}</li>
         </ul>
@@ -35,16 +34,6 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
       </div>
-      <p className="footer">
-        Open source by{" "}
-        <a
-          href="https://github.com/huber-c/react_weather"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Carina H.
-        </a>
-      </p>
     </div>
   );
 }
