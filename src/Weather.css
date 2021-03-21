@@ -170,6 +170,6 @@ label:focus,
     width: 74%;
   }
   .fahrenheit {
-    margin-left: 27px;
+    display: none;
   }
 }

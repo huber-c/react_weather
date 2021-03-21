@@ -19,7 +19,9 @@ export default function Forecast(props) {
         <ForecastPreview data={forecast.list[1]} />
         <ForecastPreview data={forecast.list[2]} />
         <ForecastPreview data={forecast.list[3]} />
-        <ForecastPreview data={forecast.list[4]} />
+        <span className="Last-Forecast">
+          <ForecastPreview data={forecast.list[4]} />
+        </span>
       </div>
     );
   } else {

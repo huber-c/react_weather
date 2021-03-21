@@ -6,3 +6,9 @@
 .Forecast canvas {
   display: block;
 }
+
+@media only screen and (max-width: 397px) {
+  .Last-Forecast {
+    display: none;
+  }
+}

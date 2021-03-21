@@ -6,14 +6,16 @@ import TemperatureUnit from "./TemperatureUnit";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <div className="overview">
-        <h1>{props.data.city}</h1>
-        <ul>
-          <li>
-            Last updated: <DateFunction date={props.data.date} />
-          </li>
-          <li className="text-capitalize">{props.data.description}</li>
-        </ul>
+      <div className="row">
+        <div className="col-6 overview">
+          <h1>{props.data.city}</h1>
+          <ul>
+            <li>
+              Last updated: <DateFunction date={props.data.date} />
+            </li>
+            <li className="text-capitalize">{props.data.description}</li>
+          </ul>
+        </div>
       </div>
       <div className="row">
         <div className="col-6 temperature-display">
