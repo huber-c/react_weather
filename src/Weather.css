@@ -154,3 +154,22 @@ label:focus,
   -webkit-appearance: none;
   box-shadow: none !important;
 }
+
+@media only screen and (max-width: 397px) {
+  /* For mobile phones: */
+  .Weather .weather-temperature strong {
+    font-size: 50px;
+  }
+  .Weather .weather-temperature canvas {
+    margin-right: 0px;
+  }
+  ul {
+    margin-left: -3.7rem;
+  }
+  .Searchbox .form-control {
+    width: 74%;
+  }
+  .fahrenheit {
+    margin-left: 27px;
+  }
+}
